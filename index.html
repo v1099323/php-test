@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230616203617">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="page">
+			<form data-ajax class="form" action="componetns/sendmail/sendmail.php" method="POST">
+				<h1 class="form__title">Отправка данных на почту</h1>
+				<div class="form__item">
+					<label for="formName" class="form__label">Имя:</label>
+					<input id="formName" autocomplete="off" type="text" name="form[name]" data-error="Ошибка" placeholder="name" class="form__input">
+				</div>
+				<div class="form__item">
+					<label for="formEmail" class="form__label">Имя:</label>
+					<input id="formEmail" autocomplete="off" type="text" name="form[email]" data-error="Ошибка" placeholder="E-mail" class="form__input">
+				</div>
+				<div class="form__item">
+					<label for="formText" class="form__label">Имя:</label>
+					<textarea id="formText" autocomplete="off" name="form[textarea]" placeholder="text" data-error="Ошибка" class="form__input form__input-text-area"></textarea>
+				</div>
+				<button type="submit" class="button">Send</button>
+			</form>
+		</main>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20230616203617"></script>
+</body>
+
+</html>
