@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230616203617">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230617125848">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,19 +15,19 @@
 <body>
 	<div class="wrapper">
 		<main class="page">
-			<form data-ajax class="form" action="componetns/sendmail/sendmail.php" method="POST">
+			<form data-ajax id="form" class="form" action="componetns/sendmail/sendmail.php" method="post">
 				<h1 class="form__title">Отправка данных на почту</h1>
 				<div class="form__item">
-					<label for="formName" class="form__label">Имя:</label>
-					<input id="formName" autocomplete="off" type="text" name="form[name]" data-error="Ошибка" placeholder="name" class="form__input">
+					<label for="formName" class="form__label">Name:</label>
+					<input data-required="name" id="formName" autocomplete="off" type="text" name="form[name]" data-error="Ошибка" placeholder="name" class="form__input">
 				</div>
 				<div class="form__item">
-					<label for="formEmail" class="form__label">Имя:</label>
-					<input id="formEmail" autocomplete="off" type="text" name="form[email]" data-error="Ошибка" placeholder="E-mail" class="form__input">
+					<label for="formEmail" class="form__label">E-mail:</label>
+					<input data-required="email" id="formEmail" autocomplete="off" type="text" name="form[email]" data-error="Ошибка" placeholder="E-mail" class="form__input">
 				</div>
 				<div class="form__item">
-					<label for="formText" class="form__label">Имя:</label>
-					<textarea id="formText" autocomplete="off" name="form[textarea]" placeholder="text" data-error="Ошибка" class="form__input form__input-text-area"></textarea>
+					<label for="formText" class="form__label">Message:</label>
+					<textarea data-required="text" id="formText" autocomplete="off" name="form[textarea]" placeholder="text" data-error="Ошибка" class="form__input form__input-text-area"></textarea>
 				</div>
 				<button type="submit" class="button">Send</button>
 			</form>
@@ -43,7 +43,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20230616203617"></script>
+	<script src="js/app.min.js?_v=20230617125848"></script>
 </body>
 
 </html>

@@ -211,6 +211,11 @@ h6 {
   margin: 0 auto;
   padding: 1.875rem;
   color: #fff;
+  position: relative;
+}
+
+.form._sending {
+  background-color: #836a6a;
 }
 
 .form__title {
@@ -230,6 +235,7 @@ h6 {
 }
 
 .form__input {
+  outline: none;
   height: 3.125rem;
   padding: 0 1.25rem;
   border-radius: 0.3125rem;
