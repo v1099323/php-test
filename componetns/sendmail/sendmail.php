@@ -31,9 +31,15 @@
 	//Тело письма
 	$body = '<h1>Встречайте супер письмо!</h1>';
 
-	//if(trim(!empty($_POST['email']))){
-		//$body.=$_POST['email'];
-	//}	
+	if(trim(!empty($_POST['name']))){
+		$body.=$_POST['name'];
+	}
+	if(trim(!empty($_POST['email']))){
+		$body.=$_POST['email'];
+	}	
+	if(trim(!empty($_POST['message']))){
+		$body.=$_POST['message'];
+	}		
 	
 	/*
 	//Прикрепить файл
