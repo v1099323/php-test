@@ -26,19 +26,19 @@
 	//Кому отправить
 	$mail->addAddress('berezovski73@gmail.com'); // Указать нужный E-mail
 	//Тема письма
-	$mail->Subject = 'Привет! Это "Фрилансер по жизни"';
+	$mail->Subject = 'Отзыв с сайта!';
 
 	//Тело письма
 	$body = '<h1>Встречайте супер письмо!</h1>';
 
-	if(trim(!empty($_POST['name']))){
-		$body.=$_POST['name'];
+	if(trim(!empty($_POST['form[name]']))){
+		$body.=$_POST['form[name]'];
 	}
-	if(trim(!empty($_POST['email']))){
-		$body.=$_POST['email'];
+	if(trim(!empty($_POST['form[email]']))){
+		$body.=$_POST['form[email]'];
 	}	
-	if(trim(!empty($_POST['message']))){
-		$body.=$_POST['message'];
+	if(trim(!empty($_POST['form[message]']))){
+		$body.=$_POST['form[message]'];
 	}		
 	
 	/*

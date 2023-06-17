@@ -164,7 +164,10 @@
                 alert(result.message);
                 form.reset();
                 form.classList.remove("_sending");
-            } else alert("error");
+            } else {
+                alert("error");
+                form.classList.remove("_sending");
+            }
         }
     }));
     window["FLS"] = true;
