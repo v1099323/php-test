@@ -11,7 +11,7 @@
 	$mail->setLanguage('ru', 'phpmailer/language/');
 	$mail->IsHTML(true);
 
-	/*
+	/
 	$mail->isSMTP();                                            //Send using SMTP
 	$mail->Host       = 'smtp.example.com';                     //Set the SMTP server to send through
 	$mail->SMTPAuth   = true;                                   //Enable SMTP authentication
@@ -19,7 +19,7 @@
 	$mail->Password   = 'secret';                               //SMTP password
 	$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
 	$mail->Port       = 465;                 
-	*/
+	
 
 	//От кого письмо
 	$mail->setFrom('from@gmail.com', 'Клиент'); // Указать нужный E-mail
