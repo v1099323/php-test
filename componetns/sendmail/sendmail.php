@@ -11,7 +11,7 @@
 	$mail->setLanguage('ru', 'phpmailer/language/');
 	$mail->IsHTML(true);
 
-	/
+	
 	$mail->isSMTP();                                            //Send using SMTP
 	$mail->Host       = 'smtp.example.com';                     //Set the SMTP server to send through
 	$mail->SMTPAuth   = true;                                   //Enable SMTP authentication
